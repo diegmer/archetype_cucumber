@@ -28,3 +28,11 @@ dependencies {
     compile('org.assertj:assertj-core:1.7.0')
 }
 gradle.startParameter.continueOnFailure = true
+
+//test {
+//    systemProperties System.getProperties()
+//    test.reports.getHtml().enabled = false
+//    test.testLogging.showStandardStreams = true
+//    test.reports.junitXml.enabled = false
+//    include 'com/atd/serenity/DefinitionTestSuite.class'
+//}

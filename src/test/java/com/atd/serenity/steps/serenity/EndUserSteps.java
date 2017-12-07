@@ -1,7 +1,9 @@
 package com.atd.serenity.steps.serenity;
 
 import com.atd.serenity.pages.DictionaryPage;
+import net.thucydides.core.annotations.Pending;
 import net.thucydides.core.annotations.Step;
+import net.thucydides.core.annotations.Title;
 import net.thucydides.core.steps.ScenarioSteps;
 
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -28,11 +30,13 @@ public class EndUserSteps {
     }
 
     @Step
+    @Title("Anna is int he home page")
     public void is_the_home_page() {
         dictionaryPage.open();
     }
 
     @Step
+    @Pending
     public void looks_for(String term) {
         enters(term);
         starts_search();
